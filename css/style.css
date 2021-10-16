@@ -1,0 +1,136 @@
+*{
+    align-items:center;
+  }
+  .content-input{
+      position: relative;
+      margin-bottom: 30px;
+      padding:5px 0 5px 60px; /* Damos un padding de 60px para posicionar el elemento <i> en este espacio*/
+      display: block;
+  }
+   
+  /* Estas reglas se aplicarán a todos las elementos i después de cualquier input*/
+  .content-input input + i{
+   background: #212121;
+   border:2px solid rgba(0,0,0,0.2);
+   position: absolute; 
+   left: 0;
+   top: 0;
+  }
+   
+  /* Estas reglas se aplicarán a todos los i despues de un input de tipo radio*/
+  .content-input input[type=radio] + i{
+   height: 30px;
+   width: 30px;
+   border-radius: 100%;
+   left: 15px;
+  }
+  .content-input input[type=radio] + i:before{
+	content: '';
+	display: block;
+	height: 18px;
+	width: 18px;
+	background: red;
+	border-radius: 100%;
+	position: absolute;
+	z-index: 1;
+	top: 4px;
+	left: 4px;
+	background:#2AC176;
+	transition: all 0.25s ease; /* Todas las propiedades | tiempo | tipo movimiento */
+	transform: scale(0) /* Lo reducimos a 0*/ ;
+	opacity: 0; /* Lo ocultamos*/
+}
+
+  .login-form{
+      width: 500px;
+      margin: 0 auto;
+      align-items: center;
+      font-family: Tahoma, Geneva, sans-serif;
+  }
+  .login-form h1{
+      text-align: center;
+      color: #4d4d4d;
+      font-size: 24px;
+      padding: 20px 0 20px 0;
+  }
+  .login-form textarea{
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #dddddd;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+  .login-forminput[type="submit"]{
+      width: 100%;
+      padding: 15px;
+      background-color: #535b63;
+      border: 0;
+      box-sizing: border-box;
+      cursor: pointer;
+      font-weight: bold;
+      color: #ffffff;
+  }
+  button{
+      text-align: center;
+      color: #4d4d4d;
+      font-size: 18px;
+      padding: 20px 0 20px;
+      width: 100%;
+      padding: 15px;
+      background-color: #535b63;
+      border: 0;
+      box-sizing: border-box;
+      cursor: pointer;
+      font-weight: bold;
+      color: #ffffff;
+  }
+  .boton {
+      color: #ff1100 !important;
+      font-size: 20px;
+      font-weight: 500;
+      padding: 0.5em 1.2em;
+      background: rgba(0,0,0,0);
+      border: 2px solid;
+      border-color: #ff5e00;
+      transition: all 1s ease;
+      position: relative;
+  }
+  .boton:hover {
+      background: #ff0000;
+      color: #fff !important;
+  }
+  footer{
+      width: 100%;
+      background: #57002b;
+      color: white;
+      padding: 20px;
+      align-items: center;
+      margin: 0 auto;
+  }
+  nav{
+      width: 100%;
+      background: #57002b;
+      color: white;
+      padding: 20px;
+      align-items: center;
+      margin: 0 auto;
+  }
+  .container-down{
+      width: 100%;
+      margin: 0 auto;
+  }
+  table{
+    align-items: center;
+  }
+  td{
+    width:600px;
+  }
+  
+  table{
+      width: 100%;
+      padding: 15px;
+    border: 1px solid #dddddd;
+      margin-bottom: 15px;
+      box-sizing:border-box;
+  }
